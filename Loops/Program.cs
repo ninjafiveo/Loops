@@ -10,7 +10,8 @@ namespace Loops
     {
         static void Main(string[] args)
         {
-            ForLoop();
+            //ForLoop();
+            ForEachLoop();
             Console.ReadKey();
         }
 
@@ -31,7 +32,16 @@ namespace Loops
             }
 
             Console.WriteLine("Now I am sad because I have no more tacos.");
+        }
 
+        static void ForEachLoop()
+        {
+            string[] shrimp = {"Pineapple Shrimp", "Coconut Shrimp", "Blackened Shrimp", "Shrimp Gumbo", "Shrimp Parm", "Shrimp Cocktail", "Cajun Shrimp", "Shrimp Scampi"};
+
+            foreach (var item in shrimp)
+            {
+                Console.WriteLine($"I like {item}.");
+            }
         }
     }
 }
